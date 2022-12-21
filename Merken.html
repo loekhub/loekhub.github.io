@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+p {
+font-size: 20px;
+}
+img{
+  heigth: 5px;
+  width: 5px;
+}
+</style>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<body>
+
+<div class="w3-sidebar w3-bar-block w3-card w3-animate-left" style="display:none" id="mySidebar">
+  <button class="w3-bar-item w3-button w3-large"
+  onclick="w3_close()">Close &times;</button>
+  <a href="index.html" class="w3-bar-item w3-button">Menu</a>
+  <a href="Merken.html" class="w3-bar-item w3-button">Merken</a>
+  <a href="eersteauto.html" class="w3-bar-item w3-button">Eerste auto</a>
+  <a href="onderdelen.html" class="w3-bar-item w3-button">Onderdelen</a>
+  <a href="OnzeAuto.html" class="w3-bar-item w3-button">Mijn vader's auto</a>
+</div>
+
+<div id="main">
+
+<div class="w3-teal">
+  <button id="openNav" class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+  <div class="w3-container">
+    <h1>Merken</h1>
+  </div>
+</div>
+
+<img src="mercedes2.jpg.jpg" alt="Car" style="width:100%">
+
+<div class="w3-container">
+
+<p>Toyota is het meest verkochte en opgezochte merk ter wereld:</p>
+<p>Mijn lievelings merk is mercedes, hierboven een foto:</p>
+<p>Abarth, Alpina, Alpine, Aston Martin, Austin, Bentley, Bugatti, Buick, Cadillac, Cupra, Dodge, Ferrari, Fisker, GMC, Hummer, Infiniti, Lada, Lamborghini, Landwind, Lincoln, Lotus, Maserati, McLaren, Mercury, MG, Oldsmobile, Polestar, Pontiac, Rolls-Royce, en Triumph.</p>
+</div>
+
+</div>
+
+<script>
+function w3_open() {
+  document.getElementById("main").style.marginLeft = "25%";
+  document.getElementById("mySidebar").style.width = "25%";
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("openNav").style.display = 'none';
+}
+function w3_close() {
+  document.getElementById("main").style.marginLeft = "0%";
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("openNav").style.display = "inline-block";
+}
+</script>
+
+</body>
+</html>
